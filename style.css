@@ -14,6 +14,8 @@ h1 {
   font-size: 3rem;
   color: #2a4d14;
   margin-bottom: 1rem;
+  justify-content: center;
+  padding: 4rem;
 }
 
 nav {
@@ -85,7 +87,7 @@ nav {
   display: inline-block;
   padding: 15px 20px;
   background-color: #67e0a3;
-  color: #00A5CF;
+  color: #00a5cf;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
@@ -93,4 +95,12 @@ nav {
 
 btn:hover {
   background-color: #aff9c9;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
