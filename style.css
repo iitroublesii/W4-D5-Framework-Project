@@ -1,3 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background-color: #AFF9C9;
+  background-color: #aff9c9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+.box {
+  background: #67e0a3;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 8px;
+}
+
+.destinations {
+  padding: 2rem;
+  display: grid;
+  gap: 1.5rem;
 }
