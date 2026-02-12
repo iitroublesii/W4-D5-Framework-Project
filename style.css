@@ -9,6 +9,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+nav {
+  background: #67e0a3;
+  padding: 1rem;
+}
+
 .nav-list {
   list-style: none;
   display: flex;
@@ -16,26 +21,6 @@ body {
   gap: 1rem;
   text-align: center;
   justify-content: center;
-}
-
-.box {
-  background: #67e0a3;
-  padding: 2rem;
-  text-align: center;
-  font-size: 1.2rem;
-  border-radius: 8px;
-}
-
-.destinations {
-  padding: 2rem;
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: 1fr;
-}
-
-nav {
-  background: #67e0a3;
-  padding: 1rem;
 }
 
 .nav-list a {
@@ -54,6 +39,21 @@ nav {
 .nav-list a:focus {
   outline: 2px solid #2a4d14;
   outline-offset: 2px;
+}
+
+.box {
+  background: #67e0a3;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 8px;
+}
+
+.destinations {
+  padding: 2rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
 }
 
 @media (min-width: 768px) {
