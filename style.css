@@ -12,7 +12,7 @@ body {
 .nav-list {
   list-style: none;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   gap: 1rem;
   text-align: center;
   justify-content: center;
@@ -30,6 +30,7 @@ body {
   padding: 2rem;
   display: grid;
   gap: 1.5rem;
+  grid-template-columns: 1fr;
 }
 
 nav {
@@ -43,4 +44,36 @@ nav {
   font-size: 1.3rem;
   padding: 0.5rem 1rem;
   display: inline-block;
+}
+
+.nav-list a:hover {
+  background: #aff9c9;
+  border-radius: 5px;
+}
+
+.nav-list a:focus {
+  outline: 2px solid #2a4d14;
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .nav-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .destinations {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .box {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .destinations {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .box {
+    font-size: 1.7rem;
+  }
 }
