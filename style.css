@@ -7,6 +7,7 @@
 body {
   background-color: #aff9c9;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
 
 h1 {
@@ -62,28 +63,7 @@ nav {
   padding: 2rem;
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: 1fr;
-}
-
-@media (min-width: 768px) {
-  /* .nav-list {
-    flex-direction: row;
-    justify-content: center;
-  }
-    */
-
-  .destinations {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .box {
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .destinations {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  grid-template-columns: 1fr 200px 1fr;
 }
 
 .btn {
@@ -106,4 +86,53 @@ btn:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.card {
+  background-color: #00a5cf;
+  width: 300px;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #67e0a3;
+}
+
+.card p {
+  margin: 8px 0;
+  font-size: 18px;
+  color: #67e0a3;
+}
+
+.rome {
+  border-top: 6px solid #67e0a3;
+}
+.tokyo {
+  border-top: 6px solid #67e0a3;
+}
+.paris {
+  border-top: 6px solid #67e0a3;
+}
+
+@media (min-width: 768px) {
+  /* .nav-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+    */
+
+  .destinations {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .box {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .destinations {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
